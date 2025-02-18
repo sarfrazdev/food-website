@@ -1,0 +1,285 @@
+/* header css */
+header .navbar{
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    z-index: 9999;
+}
+header .navbar .sticky{
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    ---webkit-transition: all 15ms ease-in-out;
+    -ms-transition: all 15ms ease-in-out;
+    -o-transition: all 15ms ease-in-out;
+    -moz-transition: all 15ms ease-in-out;
+    transition: all 15ms ease-in-out;
+    animation: stickyTransition 0.5s  both;
+    box-shadow: 0 2px 3px rgba(96,96,96,0.1);
+    
+}
+@keyframes stickyTransition {
+    0% {
+        Opacity: 0;
+        Transform: translate3d(-1 ,-100%, 0);
+        -webkit-transform: translate3d(-1 ,-100%, 0);
+    }
+    100% {
+        opacity: 1;
+        Transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    
+}
+header .logo img{
+    width: auto;
+    max-width: inherit;
+    max-height: 80px;  
+    padding-left: 3rem; 
+}
+header .nav-link{
+    display: inline-flex;
+    justify-content: center;
+    color: var(--white);
+    padding-left: 2.5rem !important;
+    font-size: 1.125rem;
+
+    font-weight: 500;
+    font-family:var(--oswald-font); 
+    text-transform: uppercase;
+    ---webkit-transition: all 15ms ease-in-out;
+    -ms-transition: all 15ms ease-in-out;
+    -o-transition: all 15ms ease-in-out;
+    -moz-transition: all 15ms ease-in-out;
+    transition: all 15ms ease-in-out;
+}
+header .sticky .nav-link{
+    color: var(--white);
+}
+header .nav-link:hover{
+    color: var(--yellow);
+}
+header .cart{
+    position: relative;
+    top: -0.5rem;
+    margin-left: 5px;
+
+}
+
+header .roundpoint{
+    width: 16px;
+    height: 16px;
+    background: var(--light-yellow);
+    color: var(--light-red);
+    border-radius: 50%;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    font-size: normal;
+    position: absolute;
+    top: 3px;
+    right: -8px;
+
+}
+
+
+/* home style 3.0 */
+
+.menu_section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.menu_section .card-img-top{
+    transition: all 500ms ease-in-out;
+}
+.menu_section h2{
+    font-size: 3.5rem;
+    color:var(--light-red);
+}
+.menu_section .para{
+    color: var(--grey);
+}
+.menu_section .item_rating {
+    color:var(--yellow);
+    padding-right: 5px;
+}
+.menu_section .wishlist{
+    color: var(--grey);
+    font-size: 20px;
+    cursor: pointer;
+&:hover{
+    color: var(--light-red);
+}
+}
+.menu_section .card-title{
+    font-weight:600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.menu_section .card-text{
+    color: var(--grey);
+    font-size: 15px;   
+}
+.menu_section .menu_price{
+    background: rgb(243, 175, 5);
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 4px;
+}
+
+.menu_section .menu_price h5{
+    color: var(--light-yellow);
+    font-size: 1rem;
+}
+.menu_section .add_to_card{
+    background-color: var(--light-yellow);
+    display: inline-block;
+    font-size: rem;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius:5px ;
+    opacity: 0;
+    transform: translateY(100px);
+    --webkit-Transition:all 500ms ease-in-out;
+    -moz-t: all 400ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    transition:all 500ms ease-in-out ;
+}
+.menu_section .card:hover .card-img-top{
+    transform: scale(1.1);
+}
+.menu_section .card:hover .add_to_card{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.menu_section .ads_box {
+    text-align: right;
+    padding: 80px 35px 50px;
+    border-radius: 6px;
+}
+.menu_section .ads_img1{
+    background: url("/Food_Assets/assets/menu/ads-1.jpg" )no-repeat center center;
+    background-size: cover;;
+}
+.menu_section .ads_img2{
+    background: url("/Food_Assets/assets/menu/ads-2.jpg" )no-repeat center center;
+    background-size: cover;;
+}
+.menu_section .ads_box h4{
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: var(--light-red);
+
+}
+.menu_section .ads_box h5{
+    font-size: 2.rem;
+    font-weight: 300;
+    color: var(--brown);
+
+}
+
+/* promotion 4.0 */
+.promotion_section {
+    padding-top: 60px;
+    padding-bottom:60px ;
+    background: var(--light-grey);
+}
+.promotion_section h2{
+    font-size: 2.5rem;
+    margin-bottom:25px ;
+}
+.promotion_section  p{
+    font-size: 1.25rem;
+}
+.promotion_section ul{
+    padding-left: 15px;
+}
+
+/* paralax */
+.bg_parallax_scroll{
+    background: url("/Food_Assets/assets/parallax/bg.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 800px;
+
+}
+/*home shop 6.0  */
+
+.shop_section{
+    padding: 100px 0 0;
+    background: var(--yellow);
+}
+.shop_section h4{
+    font-weight:400;
+    font-size: 4.5rem;
+    color: var(--bg-coffee);
+    letter-spacing: -1px;
+}
+.shop_section h2{
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--bg-coffee);
+
+}
+.shop_section p{
+    font-size: 1.2rem;
+    padding-right: 10%;
+    letter-spacing: -0.5px;
+    color: var(--bg-coffee);
+    margin-right: 40px;
+}
+ .shop_section .store{
+    max-width: 40%;
+    padding: 5px;
+ }
+ .brand_Section{
+    padding: 70px 0 40px;
+    background: var(--light-grey);
+    overflow: hidden;
+
+ }
+ .brand_Section .brand_img{
+    width: 180px;
+    height: auto;
+ }
+.carousel.slide .carousel.slide {
+    overflow: unset;
+}
+ 
+.carousel.slide  .carousel.slide .carousel-caption{
+    position: relative;
+    right: unset;
+    left: unset;
+
+} 
+
+
+@media (max--width:992px) {
+    header .navbar{
+        background-color: var(--light-black);
+    }
+    header .navbar-toggler{
+       border: none;
+       z-index: 9999;
+    }
+    .navbar-nav Link{
+        color: black;
+    }
+
+
+}
+
+@media (max-width:1200px) {
+    .promotion_section h2{
+        font-size: 2.25rem;
+        margin-bottom:25px ;
+    }   
+    .bg_parallax_scroll{
+        background-attachment:scroll;
+        height: 500px;
+
+    }
+}
